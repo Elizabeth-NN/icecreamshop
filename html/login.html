@@ -1,0 +1,79 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Log in</title>
+    <!--css file-->
+    <!-- <link rel="stylesheet" href="main.css"> -->
+    <link rel="stylesheet" href="../css/login.css">
+  </head>
+  <body>
+
+    <div class="hero">
+      <div class="form-box">
+      <div class="button-box">
+        <div id="btn">
+
+        </div>
+        <button type="button" class="toggle-btn" onclick="login()">Log in</button>
+        <button type="button" class="toggle-btn" onclick="register()">Register</button>
+      </div>
+      <div class="">
+        <!-- log in form============================================== -->
+        <form id="login"class="input-grp"  action="../php/login.php" method="POST">
+          <input type="email" class="input-field" placeholder="email" name="email"required>
+          <input type="password" class="input-field" placeholder="Enter Password" name="password" required><br><br><br>
+          <!-- <h5><i>I'm a:</i></h5> -->
+
+            <!-- <label><input type="radio"class="radiobtn" name="role" value="client" required/> Client</label>
+
+
+           <label><input type="radio"class="radiobtn" name="role" value="admin" required/>Admin</label>
+
+ -->
+
+
+          <button type="submit" class="submit-btn" name="login">Log in</button>
+        </form>
+
+        <!-- end login=================================================== -->
+
+        <!-- <p > <a href="index.html">Back to homepage</a></p> -->
+          <!--register form=============================================  -->
+        <form id="register" class="input-grp" action="../php/register.php" method="post">
+          <input type="text" class="input-field" placeholder="User Name" name="name" required>
+          <input type="email" class="input-field" placeholder="Email address" name="email"required>
+          <input type="password" class="input-field" placeholder="Enter Password" name="password" required>
+          <input type="text" class="input-field" placeholder="role i.e client or admin" name="role" required>
+
+          <button type="submit" class="submit-btn">Register</button><br>
+
+        </form>
+
+<!-- End registration form============================================= -->
+      </div>
+
+        </div>
+
+    </div>
+    <script>
+      var x=document.getElementById("login");
+      var y=document.getElementById("register");
+      var z=document.getElementById("btn");
+      function register(){
+        x.style.left="-400px";
+        y.style.left="50px";
+        z.style.left="110px";
+      }
+      function login(){
+        x.style.left="50px";
+        y.style.left="450px";
+        z.style.left="0px";
+      }
+    </script>
+  </body>
+</html>

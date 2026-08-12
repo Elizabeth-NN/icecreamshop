@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Ice Creamistry</title>
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="../css/usertable.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <!-- google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap" rel="stylesheet">
+    <!--font awesome-->
+    <link rel="stylesheet" href="../fontawesome-free-5.15.3-web/css/all.css">
+
+
+  </head>
+  <title>Order</title>
+  <body>
+    <nav>
+
+      <ul>
+        <li><a href="#" class logo>ICE CREAMISTRY<i class="fas fa-ice-cream"></i></a></li>
+        <li><a href="../php/client.php">HOMEPAGE</a></li>
+        <li>  <a href="../php/profile.php">Profile</a></li>
+        <li><a href="../php/logout.php">Log out</a></li>
+        
+      </ul>
+    </nav>
+    <div class="hero">
+    <div class="form-box">
+       <form id="buy" class="input-grp"  method="post" action="../php/order.php">
+       <input type="email" class="input-field" placeholder="Email" name="email" required>
+       <input type="text" class="input-field" placeholder="Flavour"
+       name="flavor" required>
+       <input type="text" class="input-field" placeholder="quantity" required>
+       <input type="text" class="input-field" placeholder="Delivery location" name="location"required>
+       <input type="password" class="input-field" placeholder="Enter Password" name="password" required>
+       <input type="text" class="input-field" placeholder="Mobile No." name="mobileNo"required>
+
+      <button type="submit" class="add">ORDER</button>
+    </form>
+
+      </div>
+    </div>
+  </body>
+</html>
