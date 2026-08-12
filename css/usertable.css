@@ -1,0 +1,62 @@
+/* pink-F4D6CC */
+/* purple-9D6381*/
+/* ice pink-EE7674 */
+/* light pink-F9B5AC */
+/* light green-9DBF9E */
+/* snow	#FFFAFA */
+
+table{
+  border-collapse: collapse;
+  width: 100%;
+  color:#FFFAFA;
+  font-family: monospace;
+  font-size: 25px;
+  text-align:left;
+
+}
+th{
+  background-color:#9DBF9E;
+  color: #FFFAFA;
+
+}
+tr:nth-child(even){background-color: #F9B5AC; }
+tr:nth-child(odd){color: #F9B5AC; }
+
+
+.update{
+  background-color: #FFFAFA;
+  color: #4CAF50;
+  border: 2px solid #4CAF50; /* Green */
+  transition-duration: 0.4s;
+  border-radius: 30px;
+}
+
+.delete{
+  background-color: #FFFAFA;
+  color: #d11a2a;
+  border: 2px solid #d11a2a;
+  transition-duration: 0.4s;
+  border-radius: 30px;
+}
+.update:hover {
+  background-color: #4CAF50; /* Green */
+  color: #FFFAFA;
+
+}
+.delete:hover {
+  background-color: #d11a2a; /* red */
+  color: #FFFAFA;
+
+}
+.add{
+  background-color: white;
+  color: #EE7674;
+  border: 2px solid #EE7674; /* Green */
+  transition-duration: 0.4s;
+  border-radius: 30px;
+}
+.add:hover {
+  background-color: #EE7674; /* red */
+  color: #FFFAFA;
+
+}
